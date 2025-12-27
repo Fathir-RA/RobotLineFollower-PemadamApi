@@ -52,10 +52,10 @@ Robot melakukan manuver Putar Balik 180° (Pivot) dan masuk ke kondisi diam sela
 ## Cara Penggunaan
 1. **Persiapan Broker**: Jalankan MQTT Broker (seperti Mosquitto) di komputer Anda.
 2. **Konfigurasi ESP32**:
-- Buka file .ino di folder arduino/.
-- Sesuaikan ssid, password, dan mqtt_server (Alamat IP Laptop).
-- Unggah kode ke papan ESP32.
+  - Buka file .ino di folder arduino/.
+  - Sesuaikan ssid, password, dan mqtt_server (Alamat IP Laptop).
+  - Unggah kode ke papan ESP32.
 3. **Konfigurasi Python**:
-- Instal dependensi: pip install opencv-python numpy paho-mqtt.
-- Jalankan skrip trigger.py.
+  - Instal dependensi: pip install opencv-python numpy paho-mqtt.
+  - Jalankan skrip trigger.py.
 4. **Uji Coba**: Letakkan robot di lintasan, nyalakan api di depan kamera, dan robot akan memulai misi secara otomatis.
