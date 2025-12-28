@@ -1,11 +1,11 @@
 # Robot Line Follower Fire Fighter (Kelompok 10A)
-Sistem Pengikut Garis Pemadam Api Otomatis Berbasis Computer Vision & IoT (MQTT)
+Sistem Pengikut Garis Pemadam Api Otomatis Berbasis Computer Vision & IoT (MQTT). 
 Dibuat Oleh:
-Edgard Altamerano Ferdinand
-Fathir Raihan Muhammad
-Khairana Mazaya
-Muthmainnah Indriani Mulyana
-Ripan
+- Edgard Altamerano Ferdinand
+- Fathir Raihan Muhammad
+- Khairana Mazaya
+- Muthmainnah Indriani Mulyana
+- Ripan
 
 
 ## 📝 Deskripsi Proyek
