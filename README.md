@@ -13,17 +13,17 @@ Proyek ini dikembangkan oleh Kelompok 10A untuk menciptakan sistem pemadam api o
 Berbeda dengan robot pemadam api konvensional yang hanya mengandalkan sensor jarak, robot ini menggunakan kamera untuk deteksi dini api dari jarak jauh sebelum mulai bergerak menuju titik api menggunakan navigasi garis (line following) yang presisi.
 
 ## 🛠️ Daftar Komponen
-Perangkat Keras (Hardware)
-Kontroler Utama: ESP32 
-Driver Motor: L298N 
-Sensor Navigasi: TCRT5000 5-Channel Infrared Sensor 
-Sensor Api: Flame Sensor Analog 
-Output Pemadam: Relay Module & Kipas DC 
-Komunikasi: WiFi Module (Built-in ESP32) 
-Perangkat Lunak (Software)
-Bahasa Pemrograman: C++ (Arduino IDE) dan Python
-Library Utama: WiFi.h, PubSubClient (MQTT), OpenCV (Python), NumPy
-Protokol Komunikasi: MQTT (Message Queuing Telemetry Transport)
+- Perangkat Keras (Hardware)
+- Kontroler Utama: ESP32 
+- Driver Motor: L298N 
+- Sensor Navigasi: TCRT5000 5-Channel Infrared Sensor 
+- Sensor Api: Flame Sensor Analog 
+- Output Pemadam: Relay Module & Kipas DC 
+- Komunikasi: WiFi Module (Built-in ESP32) 
+- Perangkat Lunak (Software)
+- Bahasa Pemrograman: C++ (Arduino IDE) dan Python
+- Library Utama: WiFi.h, PubSubClient (MQTT), OpenCV (Python), NumPy
+- Protokol Komunikasi: MQTT (Message Queuing Telemetry Transport)
 
 ## Logika & Cara Kerja
 Sistem ini bekerja dengan membagi tugas antara "Otak Deteksi" (Python) dan "Eksekutor" (ESP32).
