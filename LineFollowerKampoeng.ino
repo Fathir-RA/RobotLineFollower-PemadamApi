@@ -111,4 +111,21 @@ void motorControl(int kiri, int kanan) {
   analogWrite(ENB_PIN, abs(kanan));
 }
 
-// lanjutkan dari bagian void setup_wifi() ya... Setalahnya hapus komen ini 
+void setup_wifi() {
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) { delay(500); Serial.print("."); }
+}
+
+void mqttCallback(char* topic, byte* payload, unsigned int length) {
+  String message = "";
+  for (int i = 0; i < length; i++) message += (char)payload[i];
+  if (message == "START") { missionActive = true; misiSelesai = false; }
+  else if (message == "STOP") { missionActive = false; motorControl(0, 0); }
+}
+
+void reconnectMQTT() {
+  while (!client.connected()) {
+    if (client.connect("Robot10A_Client")) client.subscribe(mqtt_topic);
+    else delay(5000);
+  }
+}
